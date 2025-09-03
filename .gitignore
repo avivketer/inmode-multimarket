@@ -1,0 +1,24 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+
+# Node / Composer
+node_modules/
+vendor/
+
+# WordPress
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+*.log
+
+# Build artifacts
+*.zip
+dist/
+build/
+.env
+.env.*
+

@@ -1,0 +1,1259 @@
+/*
+Theme Name: Inmode UK Child
+Theme URI: https://inmode.com
+Description: Child theme for UK market based on Inmode Base Theme.
+Author: InMode
+Template: client-theme
+Text Domain: client-theme-uk
+Version: 0.1.0
+*/
+
+/* Place UK-specific overrides below. Parent styles are enqueued via functions.php */
+
+/*!
+Theme Name: Inmode WP Theme
+Version: 2025.1.30.v3 - Debug and Cache Bust
+*/
+body{color:#fff;}
+.color_bg{background:#fff;}
+*{box-sizing:border-box}
+:root{--bs-white:#ffffff;--bs-black:#000000;--bs-lightblue:#59B7B3;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))}
+img{max-width:100%;height:auto}
+body{width:100%;overflow-x:hidden;font-family:Heebo;background:var(--bs-black)}
+a{color:var(--bs-white);text-decoration:none;outline:0}
+dl,ol,ul{margin:0}
+ul#social li{list-style:none;gap:10px;padding:5px 10px;font-size:14px}
+ul#social >li{padding:5px 0px;}
+ul#social li a{color:var(--bs-white);text-decoration:none}
+#social i.fa.fa-globe{font-size:22px;margin-right:6px}
+ul#top-menu{justify-content:right;gap:10px;list-style:none;font-size:14px;font-family:Heebo;margin-right:20px}
+a.custom-logo-link img{max-width:100%;height:auto;width:100%; -webkit-transition: all .5s; }
+ul#primary-menu,ul#provider-menu{justify-content:center;align-items:center;list-style:none;gap:10px;font-size:17px;margin:0;padding:0}
+.active .nav-bg>div{background:#000000CC}
+header{background:transparent;}
+.banner{background-color:var(--bs-white);background-size:cover!important;background-repeat:no-repeat!important;padding-top:100px;margin-top:-250px; height:100vh;}
+.counter-box.colored,.counter-box.colored span{font-size:64px;color:var(--bs-lightblue)}
+.counter-box.colored p{color:var(--bs-white);font-size:24px;line-height:28px;max-width:145px;text-align:center;margin:0 auto 20px}
+.counter-row{border-width:2px 0 2px 0;border-color:var(--bs-white);border-style:solid}
+ul#primary-menu li a,ul#provider-menu li a{padding:7px 15px;display:block;font-size:20px; z-index:999;}
+ul#primary-menu li a .submenu{font-weight:300 !important;}
+ul#top-menu li a{padding:0 10px;display:block}
+footer{background:var(--bs-black);color:var(--bs-white)}
+.footer_top{padding-top:80px;padding-bottom:50px;text-align:center}
+.footer_bottom{margin-bottom:10px}
+.footer_top h3{font-size:48px;padding:10px 0 0;margin:0;color:var(--bs-lightblue)}
+.footer_top h5{font-size:30px;font-weight:400!important;padding:0;margin:0;letter-spacing:-.3px;color:var(--bs-lightblue)}
+ul.socail.links{display:flex;gap:20px;margin-top:10px;list-style:none;justify-content:center;font-size:22px;margin-left:20px}
+.site-header ul.socail.links{gap:14px;margin-top:0}
+.row.footer_bottom nav #footer-menu{list-style:none;font-size:16px;font-weight:400!important;width:100%;gap:10px}
+.footer-address p{margin-bottom:0}
+.footer-address{display:flex;font-size:16px;font-weight:400!important;justify-content:end;align-items:center;padding-right:20px}
+section.about_inmode{text-align:center;padding:80px 0;background:var(--bs-white)}
+section.our_workstation{padding:80px 0;text-align:center;background:url('/wp-content/uploads/2025/02/Group-21.png');background-size:cover;background-position:bottom center;background-color:var(--bs-black)}
+.our_workstation img{margin:0 auto;max-width:100%}
+.our_workstation p{color:var(--bs-white);line-height:25px;font-size:20px;max-width:80%;margin:12px auto;font-weight:700; height:75px; overflow:hidden;}
+.our_workstation a.link_discover,.studies_list a.link_discover{display:block;color:var(--bs-lightblue);padding-top:10px;font-weight:700;font-size:20px;line-height:25px;font-weight:700}
+section.clinical_studies h2,section.our_workstation h2{color:var(--bs-white);font-size:36px!important;font-weight:400!important}
+section.clinical_studies{background:var(--bs-black);margin-top:-20px;text-align:center;color:var(--bs-white)}
+hr{opacity:1!important;border:2px solid var(--bs-white)!important}
+section.clinical_studies .studies_description h2{font-size:20px!important;line-height:27px!important}
+a.btn.btn-primary.btn-studies{background:0 0;border:0;font-weight:700;color:var(--bs-lightblue);font-size:20px;line-height:25px;border:2px solid transparent}
+.studies_thumb{background:url('/wp-content/uploads/2025/02/Layer_1.png');background-repeat:no-repeat;background-position:center top;padding-top:20px;background-size:contain}
+section.clients.says{padding:80px 0;text-align:center;background:var(--bs-white)}
+.testimonial_thumb img{margin:0 auto}
+.testimonial_description{text-align:center}
+.testimonial_description p{font-size:18px !important;line-height:28px;color:var(--bs-black);font-style:italic;font-weight:300}
+.testimonial_description{padding:10px 0px; margin:0 auto; max-width:400px;}
+.testimonial_description h5{font-size:20px;color:var(--bs-black);font-weight:700}
+section.clinical_studies{padding-bottom:80px}
+.testimonial_description a{color:var(--bs-lightblue);font-size:20px;text-align:center;display:block;margin-top:30px}
+.about_inmode h1,section.clients.says h2{font-size:36px!important;color:var(--bs-lightblue);margin-bottom:30px!important;font-weight:400;text-transform:uppercase}
+.about_inmode p{font-size:24px;line-height:37px;font-weight:400; color:#000;}
+section.techonology h2{font-size:62px;font-weight:400!important;color:var(--bs-lightblue)}
+section.techonology a.btn.btn-primary.btn-contact{border:1px solid var(--bs-lightblue);background:var(--bs-lightblue);color:var(--bs-white);font-size:23px;max-width:500px;width:90%;border-radius:0!important}
+section.techonology .row{padding-top:80px}
+section.techonology{background:var(--bs-white)}
+.desktop-hide{display:none}
+.workstation_desc img{padding-bottom:10px}
+.workstation_desc h3{font-size:20px;color:var(--bs-lightblue)}
+.work_list{color:var(--bs-white);font-size:14px;line-height:24px}
+section.work_stations{padding:80px 50px;background:url('/wp-content/uploads/2025/02/Group-21.png');background-repeat:repeat;background-position:top center}
+h2.page-title{color:var(--bs-white);font-size:36px;font-weight:400!important;text-align:center;margin-bottom:50px}
+ul{margin:0;padding:0}
+ul#provider-menu{padding:0;list-style:none}
+ul.sub-menu{padding:0;list-style:none;position:absolute;padding-top:20px}
+.btn.btn-provider{height:35px; line-height:33px; text-transform:uppercase;padding:0px 5px;border:1px solid var(--bs-white);display:block;width:155px;font-size:20px;text-align:center;color:var(--bs-white);border-radius:0;margin:13px 5px}
+.btn.btn-provider.btn1{width:190px;}
+a.btn.btn-provider:hover{background:var(--bs-white)!important;color:var(--bs-black)!important}
+.banner_slider.multiple-banners.slick-initialized.slick-slider{margin-bottom:0}
+ul#primary-menu li{position:relative}
+ul#primary-menu li .menu-item-has-children .sub-menu{display:none;position:absolute;background-color:transparent;padding:10px;z-index:9999;left:18px;margin-top:8px}
+.overlay-menu:after{content:"";width:100vw;height:100vw;position:absolute;left:0px;background:#00000070; z-index:9; top:-60px; }
+.row.footer_bottom nav.navbar.navbar-expand.justify-content-left{justify-content:left!important}
+.overlay-menu{position:relative}
+button.slick-prev.slick-arrow{left:20px!important;z-index:99}
+button.slick-next.slick-arrow{right:20px!important}
+.our_workstation a.link_discover:hover,.studies_list a.link_discover:hover{color:var(--bs-white)}
+.testimonial_description a:hover{color:var(--bs-black)}
+section.techonology a.btn.btn-primary.btn-contact:hover{color:var(--bs-lightblue);background:var(--bs-white);border:1px solid;font-size:23px!important;font-weight:500!important}
+.studies_thumb img{margin:0 auto}
+#exampleModal2 .modal-content{border:0;padding:0;background:var(--bs-white)}
+#exampleModal2 .modal-content .modal-body{padding:0}
+#exampleModal2 .tab-container{margin:40px 0 0 auto;padding:0 15px}
+#exampleModal2 button.btn-close{top:5px;left:calc(100% - 37px)}
+.bg-white.contact_bg.bg-pop{color:var(--bs-black)!important;min-height:80vh}
+p.study_date{margin-bottom:0!important;font-size:20px}
+p.study_publication{font-size:20px}
+section.clinical_studies .container>h2{padding:50px 0}
+section.clients.says .conatiner-fluid{padding-left:50px;padding-right:50px}
+.page-template-workstation section.work_stations{background:var(--bs-black) url('/wp-content/uploads/2025/02/bg-pattren-workstation.png')!important;background-position:center center!important;background-size:contain!important;background-repeat:no-repeat!important}
+.row.workstation-bottom.my-3{max-width:90%;margin:0 auto;border-bottom:1px solid var(--bs-lightblue)}
+.workstation-link{text-align:right}
+.workstation-link a{color:var(--bs-lightblue)!important;font-size:16px;font-weight:700}
+.workstation-bottom .workstation_desc{color:var(--bs-white);font-size:14px;font-weight:400;line-height:20px}
+.workstation-bottom .workstation_desc h3{font-size:14px;font-weight:400;line-height:20px}
+.workstation-bottom img.wrokstation_logo{max-width:221px;margin:0 auto;display:block}
+.post_header h3{color:var(--bs-lightblue);font-size:32px;font-weight:400;letter-spacing:5px;margin:30px;line-height:30px}
+
+section.main_part img.mx-auto{padding-bottom:15px; height:175px; width:auto; z-index:-1; margin-top:-110px;}
+ul.workstation_nav{list-style:none}
+ul.workstation_nav li{border-right:1px solid var(--bs-white)}
+ul.workstation_nav li:last-child{border:0}
+ul.workstation_nav li a{display:block;padding:0 15px;font-size:17px;font-weight:300;line-height:20px}
+section.main_part .row.content_work h2{font-size:33px;font-weight:400;line-height:28px;padding:20px 0}
+.row.content_work img{margin:0 auto;width:fit-content;display:block;  }
+div#work_banifit ul{padding-left:20px;margin:0;font-size:23px;color:var(--bs-white);list-style:outside;line-height:40px;font-weight:400}
+.row.content_work{padding-top:80px}
+section.main_part .post_desc{font-size:23px;line-height:30px;color:var(--bs-white);font-weight:400}
+div#work_banifit>ul>li{padding:10px 0}
+div#work_banifit>ul>li::marker, .fundamentals ul>li::marker{color:var(--bs-lightblue)}
+div#work_banifit a.request-list{text-align:right;width:fit-content;display:block;margin-left:auto;font-size:25px;line-height:28px;font-weight:500;padding-bottom:20px}
+body.single.single-workstation{background-image:url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/Group-20-3.png');background-position:top 78vh center;background-repeat:no-repeat}
+section#work_studies{padding-bottom:40px!important}
+hr.border-single-work{max-width:98%;margin:60px auto 0;border:2px solid var(--bs-lightblue)!important}
+section#work_studies hr.border-single-work{margin-bottom:40px}
+section.main_part{padding-bottom:80px}
+section#work_tech h2.inner_heading{font-size:33px;line-height:28px;font-weight:400}
+section#work_event{margin:30px 0}
+section#work_event h2,section#work_news h2{font-size:36px;font-weight:400;line-height:40px;padding:40px 0;text-align:center;color:var(--bs-white)!important;text-transform:uppercase}
+section#work_news{padding-bottom:80px}
+section#work_tech h3{font-size:33px;line-height:28px;font-weight:400}
+section#work_tech p{color:var(--bs-white);font-size:20px!important;text-align:center;line-height:28px;font-weight:400;padding:20px 10px}
+section#work_tech .after-before.mt-auto span{color:var(--bs-white);font-size:18px;line-height:28px;font-weight:400;padding-top:10px!important;display:block}
+section#work_studies h3{font-size:36px;line-height:45px;font-weight:400;padding-bottom:40px}
+.tech_list a.link-btn{border:2px solid;padding:5px 50px;display:block;width:fit-content;margin:20px auto;font-size:20px;font-weight:400}
+section#work_studies h2{padding:0 0 50px}
+section.clinical_studies .btn-primary:hover{background-color:transparent;color:var(--bs-lightblue)!important;border:2px solid var(--bs-lightblue)}
+section.clinical_studies a.btn.btn-primary.btn-studies{border:2px solid transparent; color:#fff;}
+section.clinical_studies a.btn.btn-primary.btn-studies:hover{background:0 0;border:2px solid var(--bs-lightblue);color:var(--bs-lightblue)}
+.page-template-treament_template{background-image:url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/bg-1-2.png'),url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/bg-banner.png');background-size:100% 80vh,auto auto;background-repeat:no-repeat;background-position:top center,center center}
+h2.page_title{text-transform:uppercase;font-size:45px}
+ul.treament-list{display:flex;flex-direction:row-reverse;flex-wrap:wrap}
+ul.treament-list li{list-style:none;width:33%}
+h3.treatment_heading{max-width:200px;position:absolute;top:60%;left:50%;transform:translate(-50%,-60%);text-align:center;font-size:20px}
+.treament-thumb{width:200px;position:relative;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);overflow:hidden}
+.team-list.col-md-4.text-right .treament-thumb{margin-left:auto}
+.team-list a.color2.link-btn { display: block; margin: 20px auto;  width: 220px;text-align: center;border: 2px solid; padding:5px 10px;}
+.overlay{height:100%;width:100%;background:#00000070;position:absolute;top:0;opacity:0; z-index:99;}
+.treament-thumb a:hover .overlay{opacity:1}
+.results-section{padding:80px 15px}
+.image{position:relative;width:40em;max-width:100%;height:20em;margin:auto}
+span.caption_title{position:absolute;bottom:0;color:var(--bs-white);width:100%;text-align:right;display:block;padding:10px}
+img.title_logo{display:block;margin:10px auto}
+a.link{text-align:center;display:block;margin-bottom:50px}
+.comparison{width:100%;padding-bottom:100%;overflow:hidden;position:relative}
+figure{position:absolute;background-size:cover!important;font-size:0;width:100%;height:100%;margin:0}
+.divisor{background-size:cover!important;position:absolute;width:50%;box-shadow:0 5px 10px -2px rgba(0,0,0,.3);bottom:0;height:100%}
+.handle{position:absolute;height:50px;width:50px;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);z-index:1;background:var(--bs-lightblue);border-radius:50%;border-color:var(--bs-lightblue)}
+input[type=range]{-webkit-appearance:none;-moz-appearance:none;position:absolute;top:50%;left:-25px;transform:translateY(-50%);background-color:transparent;width:calc(100% + 50px);z-index:2}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;border:none;height:50px;width:50px;border-radius:50%;background:0 0;border:4px solid #fff;box-shadow:0 0 8px 1px rgba(0,0,0,.3)}
+input[type=range]::-moz-range-track{-moz-appearance:none;height:15px;width:100%;background-color:transparent;position:relative;outline:0}
+.news-desc{padding:15px 35px;text-align:center;background:var(--bs-lightblue)}
+.news-desc h4{font-size:16px;text-align:left;border-bottom:2px solid var(--bs-white);width:fit-content;font-weight:700;color:var(--bs-white)}
+.news-desc p{font-size:20px;margin-bottom:0;margin-top:10px;line-height:26px;font-weight:700;min-height:80px;overflow:hidden; color:#000;}
+.news-desc h2 { font-size: 20px;line-height: 26px;  font-weight: 700;  color: #000;  min-height: 80px;}
+.single.single-treatments h2.color2.heading_post{margin:00;text-align:center;font-size:52px;line-height:90px;font-weight:400}
+.single.single-treatments h3{font-size:32px;line-height:48px;text-align:center;letter-spacing:0;text-transform:uppercase;word-spacing:5px;color:var(--bs-white)}
+.single.single-treatments .single-post_desc h3{font-size:32px;text-align:left;color:var(--bs-lightblue);text-transform:capitalize;word-spacing:5px}
+.single.single-treatments .single-post_desc p{color:var(--bs-white);font-size:23px;line-height:28px;margin-bottom:25px}
+.result_list1.col-md-4>div{max-width:450px;margin:0 auto;text-align:center}
+.after-before-content p{color:var(--bs-white);font-size:23px;line-height:28px;font-weight:400;margin:30px auto}
+.page-template-clinical-studies h2.page_title{font-size:52px;font-weight:400}
+.page-template-clinical-studies .main_part p{font-size:24px;line-height:37px;font-weight:400}
+.page-template-clinical-studies h3.clinical-Studies_heading{font-size:26px;line-height:32px;font-weight:400}
+.page-template-clinical-studies .studies-meta p{font-size:20px;line-height:24px;font-weight:400;text-align:center}
+.page-template-clinical-studies .studies-meta{padding:20px 0}
+.page-template-clinical-studies a.color2.link-btn{font-size:20px;border:2px solid var(--bs-lightblue);padding:.375rem 1.75rem;display:block;max-width:max-content;margin:20px auto}
+.modal-header{border-bottom:none}
+.modal-content{height:auto;border-radius:0;background:0 0;box-shadow:none}
+.modal-body form{margin:0 auto}
+.modal-content .close{opacity:1;font-size:30px}
+div#exampleModal{background:rgba(0,0,0,.8)}
+input.search-field{background:0 0;color:var(--bs-white);border:1px solid var(--bs-white);box-shadow:none;padding:13px 20px;width:300px}
+input.search-submit{background:var(--bs-white);border:1px solid var(--bs-white);padding:13px 20px;font-size:16px;font-weight:400}
+.modal-content{color:var(--bs-white);border-color:var(--bs-white)}
+button.btn-close{padding:0;margin:0;color:var(--bs-white);opacity:1;top:-10px;position:relative;font-size:24px;outline:0!important}
+.modal-header .btn-close:hover{color:var(--bs-white)}
+button.btn.btn-search{background:0 0;border:0;padding:0;font-size:16px;line-height:20px;top:-2px;position:relative;color:var(--bs-white)}
+.trapezoid-1{height:50px;width:200px;background:var(--bs-lightblue);text-align:center;line-height:50px;position:fixed;top:calc(50% + 100px);right:-75px;transform:rotate(90deg) translateX(-50%);clip-path:polygon(0% 0%,100% 0%,75% 100%,25% 100%)}
+.trapezoid-1 a{display:block}
+.tab-container form input,.tab-container form select,.tab-container form textarea{width:80%!important;height:35px;border:1px solid var(--bs-black);padding:0 10px}
+.tab-container form textarea{height:87px}
+.tab-container form label{display:block;width:100%;padding:14px 0; color:#000;}
+.tab-container form input.wpcf7-submit{max-width:258px;margin:0 auto;display:block;height:49px;background:var(--bs-lightblue);color:var(--bs-white);border:0;text-transform:uppercase;font-size:25px; font-weight: 400;}
+.nav-tabs{border-bottom:1px solid var(--bs-black)}
+.nav-tabs .nav-link.active,.nav-tabs .nav-link:hover{background:var(--bs-black);color:var(--bs-white);border-color:var(--bs-black);border-radius:0}
+.bg-white{background-color:var(--bs-white)!important;background-image:url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/Pro-Capture-One-2229-Contact-1.png'),url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/Group-20-1.png');background-repeat:no-repeat,no-repeat;background-position:center left,center center}
+.nav-tabs,.nav-tabs .nav-link{background:0 0;color:var(--bs-black);border-color:var(--bs-black);border-radius:0}
+body.single.single-treatments{background-image:url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/bg-1-2.png'),url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/bg-banner.png');background-size:100% 80vh,auto auto;background-repeat:no-repeat;background-position:top center,center center}
+body.single.single-treatments section.main_part{padding-bottom:0}
+.workstation_desc h3{text-transform:uppercase}
+.workstation_desc li{list-style:inside}
+.workstation_desc p{margin-bottom:20px}
+.workstation-link a:hover{color:var(--bs-white)!important}
+section.logo_list{background:rgba(89,183,179,.64)}
+.logo_list img{max-width:180px;width:100%}
+.page-desc p{font-size:22px;text-align:center;color:var(--bs-white)}
+.studies_description{padding:8px 20px}
+h3.clinical-Studies_heading.color2{font-size:26px;line-height:32px}
+.studies-meta p{text-align:left;color:var(--bs-white);font-size:17px;line-height:24px;margin:0}
+.studies-meta{padding:0 20px}
+.workstation_img.col-md-5.col-sm-12 {  overflow: hidden;}
+.workstation_img img{height:150%;object-fit:cover;}
+.btn-check:focus+.btn,.btn:focus{box-shadow:none}
+.color2{color:var(--bs-lightblue) !important;}
+a:hover{color:var(--bs-white)}
+.menu-item-has-children .sub-menu{display:none;position:absolute;background-color:#00000070;padding:10px;z-index:9999;left:0}
+.sub-menu li a:hover{color:var(--bs-lightblue)}
+.menu-item-has-children>a{position:relative}
+.menu-item-has-children>a:after{content:"\f107";font-size:12px;margin-left:5px;cursor:pointer;font-family:FontAwesome}
+.collapse.show .menu-item-has-children .sub-menu{position:relative;left:0;background:0 0}
+.row.content_work.align-items-end.px-5{max-width:1550px;margin:0 auto}
+section#work_tech h2{max-width:1550px;margin:0 auto}
+.slick-prev:before{content:"\f104"!important;font-family:FontAwesome!important;font-size:40px;color:var(--bs-lightblue)}
+.slick-next:before{content:"\f105"!important;font-family:FontAwesome!important;font-size:40px;color:var(--bs-lightblue)}
+.testimonial_slider .slick-next:before,.testimonial_slider .slick-prev:before{color:var(--bs-lightblue)!important}
+.slick-prev{left:0}
+.slick-next{right:0}
+div#navbarSupportedContent{position:absolute;background:rgba(0,0,0,.8);left:0;width:100%;z-index:9999;padding:30px;list-style:none}
+ul#mobile-menu li a{padding:15px;display:block}
+ul#mobile-menu{list-style:none;position:relative}
+div#navbarSupportedContent ul.socail.links{gap:20px;justify-content:start}
+button.navbar-toggler{color:var(--bs-white);border:1px solid var(--bs-white)}
+button.navbar-toggler .ml-auto i.fa.fa-bars,button.navbar-toggler.collapsed i.fa.fa-times{display:none!important}
+button.navbar-toggler i.fa.fa-times,button.navbar-toggler.ml-auto.collapsed i.fa.fa-bars{display:block!important}
+section#work_studies{margin-top:0}
+.news-desc p.date{font-size:16px!important;margin-top:0;color:var(--bs-white)}
+.navbar-expand{justify-content:center!important}
+.btn.btn-provider:hover{background:var(--bs-white)!important;color:var(--bs-black)}
+.active button.btn.btn-provider{background:var(--bs-white);color:var(--bs-black)}
+ul#social{position:relative}
+ul#social .menu-item-has-children .sub-menu li a{color:var(--bs-white);font-size:14px!important}
+ul#primary-menu>.menu-item-has-children>ul.sub-menu{width:max-content!important}
+ul#primary-menu>.menu-item-has-children>ul.sub-menu li>ul.sub-menu{left:100%;top:0;margin-top:0;padding-top:0;width:max-content}
+ul#primary-menu li>ul.sub-menu li>ul.sub-menu li a{padding:9px 10px 0; font-weight:300 !important;}
+ul#primary-menu>li>a, ul#provider-menu>li>a{border-bottom:1px solid transparent}
+ul#primary-menu>li>a:active,ul#primary-menu>li>a:hover, ul#provider-menu>li>a:active,ul#provider-menu>li>a:hover{border-color:var(--bs-lightblue);color:var(--bs-lightblue)}
+.tab-container{margin:0 auto;width:950px;padding:80px 15px;max-width:100%}
+.menu-item-has-children>.sub-menu>.menu-item-has-children>a:after{content:"\f105";width:10px;font-size:20px;margin-left:15px}
+.menu-item-has-children>.sub-menu>li>a{font-size:30px!important; font-weight:300; line-height:45px!important;}
+ul#primary-menu li>ul.sub-menu li>ul.sub-menu li a{padding:3px 10px 0;font-size:24px!important; font-weight:300;}
+section#work_event .row.tech_list.px-5{padding:0 50px}
+.row.justify-content-center.align-items-center.single_details p { font-size: 16px; color: #fff;}
+body.page-template-clinical-studies .main_part .container-fluid { max-width: 1550px;}
+body.page-template-clinical-studies { background-image: url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/bg-1-2.png'),url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/bg-banner.png'); background-size: 100% 80vh,100% auto; background-repeat: no-repeat;  background-position: top center,center center;}
+ul.sub-menu { z-index: 9999999 !important;}
+img.custom-logo:hover{transform:scale(1.1);}
+.fixed_width.container-fluid {  max-width: 1550px;  margin: 0 auto;}
+section.body_content_about {background: white; color: #000; padding:35px 0; background-image:url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/Group-20-5.png'); background-postion:top center; background-repeat:no-reapeat;}
+section.body_content_about p {   color: #000;}
+section.body_content_about .page-desc p {  font-size: 24px;  line-height: 37px;}
+section.body_content_about hr.single_border { border: 2px solid #59b7b3 !important; margin-top: 50px; margin: 50px auto;width: 90%;}
+section.body_content_about h2{font-weight:400; text-transform: uppercase;}
+section.body_content_about h3.heading_sub_inner { font-size: 33px;line-height: 37px; font-weight: 400;}
+.vision_mission { font-size: 23px;line-height: 37px;}
+.fundamentals ul li {font-size: 23px;line-height: 37px;}
+.fundamentals ul {  padding-left: 30px;}
+.fixed_width.team_group{padding-top:80px;}
+.team_thumb img { clip-path: polygon(7% 28%, 49% 7%, 92% 28%, 92% 71%, 49% 92%, 7% 70%); height: 163px; padding: 0; width: 337px;  object-fit: cover; object-position: top center;}
+.team_thumb {background: url("https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/box-container.png");background-size: contain; background-repeat: no-repeat; overflow: hidden;}
+div#teamModal .modal-dialog .modal-content {background: #fff; color: #000; border:1px solid;}
+.team-list.row img {width: 180px;}
+.team-list.row{margin-top:40px !important}
+.team_description h4, .team_description p { font-size: 16px !important; line-height: 23px !important; margin:5px 10px 10px; color: var(--bs-lightblue) !important; text-align:left; text-transform:uppercase;}
+.team-list.row p { font-size: 20px;line-height: 33px;}
+div#teamModal{background-color:rgba(255,255,255,0.8);}
+div#teamModal button.btn-close {position: absolute; right: 15px;top: 15px;}
+img#modalImage {max-height: 190px; margin-right: 20px;}
+.team-list.row p {font-size: 20px;  line-height: 33px; text-align:left;}
+.team_list_div:after { content: ""; position: absolute;width: calc(100% - 130px); height: 2px;background: var(--bs-lightblue);right: 0;bottom: 12px;}
+.team_list_div{position:relative;}
+.team_pop_content h5 { font-size: 21px;line-height: 27px;text-transform: uppercase; text-align: left;}
+div#teamModal .d-flex.align-items-end { border-bottom: 2px solid #59b7b3; width: fit-content;}
+p#modalContent {text-align: left; margin-top: 10px; font-size: 20px;line-height: 33px;}
+.team_pop_content { margin-bottom: 20px;}
+.team_description.p-2 { width: calc(100% );}
+.img-thumb {width: 180px;}
+button.btn-close {top: 0; font-size: 20px;}
+section.our_workstation h2{margin-bottom:50px;}
+.our_workstation .slick-dots li button:before{color:#fff !important;}
+.slick-dots li button:before{opacity:1 !important}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {opacity:0.25 !important;}
+p.branding {margin-bottom: 0;font-size: 10px;  margin-top: 0px;}
+input.search-submit:hover { background: var(--bs-lightblue);border-color: var(--bs-lightblue);  color: #fff; border:1px solid var(--bs-lightblue);}
+.meta_content>p {min-height: unset;}
+.news-desc h3 { color: #000;font-size: 20px;margin-top: 10px; font-weight:500;}
+section.work_stations h2.page-title { color: var(--bs-lightblue); font-size:52px;}
+.frame-container {position: relative; display: inline-block;width: 300px; height: 310px;}
+.frame-container img {display:block; width:100%;height:100%;-webkit-mask-image: url('#hex-mask');mask-image: url('#hex-mask'); -webkit-mask-size: 100% 100%;mask-size: 100% 100%;background-color: white;}
+.hexagon-frame {position: absolute;top: 0; left: 0;width: 100%;height: 100%;pointer-events: none; }
+.bg_work img{max-height:650px; opacity:0;}
+
+.news-thumb img{width:100%;}
+.slick-initialized .slick-slide.team-list.blog-list { display: block; margin-left: 50px;  margin-right: 50px;}
+body.single.single-workstation section.main_part {  postion:relative;}
+.sticky {position: fixed;top: 0; width: 100%;left: 0;padding: 20px; background: rgba(0,0,0,0.8);}
+/* Original ba-Slider rule - force height constraint for desktop */
+.ba-Slider{  position:relative;  display:block; width:max-content; margin:0 auto; overflow:hidden;-moz-user-select: none; -webkit-user-select: none;  -ms-user-select:none; user-select:none; max-width:100%;}
+
+/* CLEANED UP - Removed duplicate conflicting CSS */
+
+/* Before/After true split fix */
+.ba-Slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 270px;
+  max-height: 270px;
+  min-height: 270px;
+  overflow: hidden;
+  background: #000;
+}
+.ba-Slider #after {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 100%;
+  height: 270px;
+  z-index: 1;
+  overflow: hidden;
+}
+.ba-Slider #before {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 50%; /* Controlled by JS */
+  height: 270px;
+  z-index: 2;
+  overflow: hidden;
+  transition: width 0.2s;
+}
+.ba-Slider #before img,
+.ba-Slider #after img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+}
+/* Figma-style bar and handle */
+.ba-Slider .slider2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 270px;
+  background: #00BCD4;
+  z-index: 3;
+  cursor: ew-resize;
+  transform: translateX(-50%);
+  transition: left 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px #00BCD4;
+}
+.ba-Slider .slider2::after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: #00BCD4;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 600px) {
+  .ba-Slider .slider2::after {
+    width: 20px;
+    height: 20px;
+  }
+  .ba-Slider {
+    aspect-ratio: 1/1;
+  }
+}
+
+@media (max-width: 767px) {
+    .ba-Slider {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+/* REMOVED CONFLICTING CSS - keeping only the fixed version at line 1172 */
+.page-template-news_template,.page-template-blog-template, .news-template-default, .post-template-default, .page-template-past-events, .page-template-upcoming-events  {background: #000 url('https://inmodemdmasstg.wpenginepowered.com/wp-content/uploads/2025/02/news-bg.png'); background-size: 100% auto; background-repeat: no-repeat;}
+.form-filters button.btn.btn_border_white.dropdown-toggle, .form-filters button.btn_border_white { border: 1px solid #fff; color: #fff; width: 230px !important; font-size: 20px; font-weight: 400;}
+.filter_list { gap: 20px;}
+.form-filters ul.dropdown-menu.show li label { color: #fff !important; white-space:unset !important; font-size: 20px !important; background: transparent; font-weight: 400;}
+.form-filters ul.dropdown-menu {width: 230px;background: rgba(0,0,0,0.75);}
+.form-filters button#all-button { background: #fff; color: #000;}
+#after img {width: 100%;max-width: 100%;}
+.footer_top img.custom-logo { max-width: 281px;}
+.multip, .multip1 { position: absolute; border: 1px solid #000; width: 800px; right: 60px;padding: 20px; color:#000; background:#fff; z-index:9999;}
+.tab-container form input[type="checkbox"] {width: 20px !important; height: 20px;}
+.tab-container form input[type="checkbox"] span.wpcf7-form-control.wpcf7-checkbox {display: flex;flex-wrap: wrap; width: 100%;  gap: 20px;}
+.tab-container form .wpcf7-list-item { margin: 0;width: 50%;}
+.tab-container form .wpcf7-list-item label {padding: 10px; display: flex; gap: 10px;align-items: start;}
+a.multi.btn, a.multi1.btn {  width: 80%; text-align: left; padding: 0 10px;height: 35px;border: 1px solid;border-radius: 0;line-height: 33px; color: #000;}
+div#videoModal {background: rgba(255,255,255,0.8);}
+div#videoModal button.btn-close {position: absolute; top: 15px; right: 15px;}
+div#videoModal .modal-content { border: 1px solid #000; background:#fff;}
+.page-template-about-page-template section.main_part { padding-bottom: 0;}
+.tech_logo {min-height: 100px; width:100%; text-align:center;}
+.tech_logo img {margin: 20px auto;}
+.event-top-part { background: #59B7B3; padding: 20px; text-align: center;}
+.event-top-part p {    margin-bottom: 0; border-bottom: 1px solid #fff; font-size:16px !important;}
+.event-top-part h4 a{color: #000;font-size: 20px;line-height: 26px;  margin-bottom: 0;  padding: 15px 0 0; display:block; font-weight:700; min-height:60px;}
+.event-top-part span{font-size:16px; font-weight:700;}
+.event-top-part sapn i { font-size: 25px;}
+a.btn.btn-event {
+    background: var(--bs-lightblue);
+    color: #fff;
+    display: block;
+    margin: 20px;
+    max-width: 100%;
+    width: 230px !important;
+    height: 35px;
+    padding: 0;
+    line-height: 35px;
+    border: 1px solid var(--bs-lightblue);
+    border-radius:0px;
+}
+a.btn.btn-event:hover {
+    background: #fff;
+    color: var(--bs-lightblue);
+    border: 1px solid #fff;
+}
+    .event-thumb {
+  position: relative;
+  width: 100%;}
+
+.event-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-thumb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.75);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.event-thumb:hover .overlay-thumb {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.event-thumb iframe {
+    max-width: 100%;
+    height: auto;
+    min-height: 280px;
+} 
+section.events.upcoming-events h2.page-title {
+    color: var(--bs-lightblue);
+    font-size: 52px;
+    text-transform:uppercase;
+}
+section.events.upcoming-events p {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+.page-template-contact-page-template label {
+    font-size: 20px !important;
+    font-weight: 400;
+}
+.page-template-after-before-template .page-desc p {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.page-template-about-page-template a.uk_marketing.btn.btn_link {
+    font-size: 33px;
+    font-weight: 400;
+    color: #59B7B3;
+    text-transform: uppercase;
+}
+.entry-content1 p, .entry-content1  {
+    font-size: 20px;
+    line-height: 27px;
+}
+h1.entry-title {
+    font-size: 52px;
+    text-transform: uppercase;
+}
+
+div#eventModal .modal-content{ color:#000; background:#fff; overflow:hidden;}
+.top_bar_model {background: var(--bs-lightblue);padding: 15px  50px !important; }
+button.close.btn.close-event { opacity: 1; font-size: 30px; padding: 0 10px;position: absolute;  z-index: 9999;right: 0;}
+.row.p-5.bg_dark { background: #000;color: #fff;}
+p.eventDescription {font-size: 20px;line-height: 31px;}
+p.locate {  font-size: 20px;color: var(--bs-lightblue);}
+div#eventModal a.btn.btn-link.register {background: var(--bs-lightblue);color: #fff;text-decoration: none; width: 323px;height: 47px; line-height: 45px;padding: 0; border-radius: 0;  border: 1px solid var(--bs-lightblue);font-size: 20px;}
+p.tream {font-size:22px; font-weight:700; text-align: left; width: fit-content; border-bottom: 2px solid; color: #fff; font-size: 20px;}
+h5#eventTitle { font-size: 43px; font-weight:700;}
+h6#eventDate {  font-size: 35px; font-weight:700;}
+.serach.result.row.row_list h2 a {color: var(--bs-lightblue);   text-transform: uppercase;font-size: 35px;    display: block;   margin-bottom: 10px;}
+.serach.result.row.row_list p {font-size: 20px;line-height: 31px;}
+.serach.result.row.row a.color2.link-btn { display: block;font-size: 16px !important; margin-top: 0 !important; max-width: fit-content; border: 1px solid;  padding: 5px 30px; margin-bottom: 30px;}
+ul#primary-menu li .color2 a{color:var(--bs-lightblue) !important;}
+
+button.slick-next.slick-arrow{right:0px}
+button.slick-prev.slick-arrow{left:0px;}
+a.btn.btn-treatment_back.color2 { font-size: 20px;  font-weight: 700;  padding: 50px 0;}
+h2.color2.heading_post {font-size: 30px;font-weight: 700;}
+a.d-block.color2.link_btn.link_box.p-2 {font-weight: 700; font-size: 20px;}
+.post_header p {  font-size: 20px;  line-height: 24px;}
+h2.text-center.color2.single_post_title {
+    font-size: 52px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.post_header p.date {
+    font-size: 19px; font-weight:700; 
+}
+.event-top-part p {
+    font-weight: 700 !important;
+}
+a.text-center.color2.pre_event_link {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+h2.page_title.text-center.after_before_gallery {
+    font-size: 52px;
+    font-weight: 400;
+}
+.result_list1 a.color2.link-btn.d-block {
+    font-size: 20px;
+    font-weight: 700;
+}
+.tab-container form textarea {
+    height: 87px;
+    width: 100% !important;
+}
+.tab-container form span.wpcf7-form-control.wpcf7-acceptance span.wpcf7-list-item-label {
+    font-size: 14px;
+}
+.tab-container form .d-flex >p { display: flex; width: 100%;  margin-bottom: 0; justify-content:space-between;}
+.tab-container form .wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item {width: 100%;}
+.tab-container form span.wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item { width: 100%;}
+.tab-container div#nav-tab {
+    gap: 20px;
+}
+.sign-height {
+    min-height: calc(80vh - 170px);
+}
+#wpcf7-f1430-o1 label {
+    display: block;
+    width: 100% !important;  font-size: 20px;
+    margin-top: 15px;
+}
+#wpcf7-f1430-o1 input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, #wpcf7-f1430-o1 select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required, #wpcf7-f1430-o1 textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    height: 35px; padding:7px 15px;     color: #ffff !important;
+} 
+#wpcf7-f1430-o1 input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    max-width: 348px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--bs-lightblue);
+    color: #fff;
+    height: 47px;
+    font-size: 20px;
+    display: block;
+}
+#wpcf7-f1430-o1 span.wpcf7-form-control.wpcf7-acceptance label {
+    font-size: 14px !important;
+}
+#StudiesModal .modal-content{border:0px;}
+
+/* Clinical Studies Download Modal Styling */
+#StudiesModal .modal-content {
+    border: 0;
+    border-radius: 0;
+    background: var(--bs-white);
+}
+
+#StudiesModal .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1050;
+    font-size: 30px;
+    color: #000;
+    border: none;
+    background: transparent;
+    opacity: 0.8;
+}
+
+#StudiesModal .close:hover {
+    opacity: 1;
+    color: #000;
+}
+
+#StudiesModal .modal-content textarea {
+    height: 180px !important;
+    min-height: 180px !important;
+}
+
+/* Clinical Studies Modal Form Dropdown Fixes */
+#StudiesModal select {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #ccc !important;
+    padding: 8px 12px !important;
+    font-size: 16px !important;
+}
+
+#StudiesModal select option {
+    background-color: #fff !important;
+    color: #000 !important;
+    padding: 8px 12px !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-size: 16px !important;
+}
+
+#StudiesModal select:focus {
+    outline: 2px solid var(--bs-lightblue) !important;
+    background-color: #fff !important;
+}
+
+#StudiesModal select:hover {
+    border-color: var(--bs-lightblue) !important;
+}
+
+/* Ensure dropdown options are always visible - multiple selectors for compatibility */
+#StudiesModal .wpcf7-form-control.wpcf7-select,
+#StudiesModal .wpcf7-select,
+#StudiesModal select[name="pays"] {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #ccc !important;
+}
+
+#StudiesModal .wpcf7-form-control.wpcf7-select option,
+#StudiesModal .wpcf7-select option,
+#StudiesModal select[name="pays"] option {
+    background-color: #fff !important;
+    color: #000 !important;
+    font-weight: normal !important;
+}
+
+/* Force override any inherited white text color */
+#StudiesModal form select,
+#StudiesModal form select *,
+#StudiesModal select,
+#StudiesModal .modal-body select,
+#StudiesModal .modal-content select {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+/* Additional force overrides for all possible select variations */
+#StudiesModal * select {
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+}
+
+#StudiesModal * select option {
+    color: #000 !important;
+    background-color: #fff !important;
+    font-weight: normal !important;
+}
+
+/* Clinical Studies Download Button CSS */
+.clinical_studies .open_download {
+    background: transparent;
+    border: 2px solid var(--bs-lightblue);
+    color: var(--bs-lightblue);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.clinical_studies .open_download:hover {
+    background: var(--bs-lightblue);
+    color: var(--bs-white);
+}
+
+/* Clinical Studies Modal - Essential Dropdown Fix Only */
+#StudiesModal select {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #ccc !important;
+    padding: 8px 12px !important;
+    font-size: 16px !important;
+}
+
+#StudiesModal select option {
+    background-color: #fff !important;
+    color: #000 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+@media only screen and (max-width:1920px){
+#exampleModal2 .modal-xl{max-width:100%!important;width:1400px!important}
+
+}
+@media only screen and (min-width:1200px){
+.signauture-section img.w-100.signture { margin-left: 110px; width:100%;}
+
+
+
+}
+/* StudiesModal Form Field Styling - Essential CSS from German site */
+#StudiesModal form input:not([type="submit"]):not([type="checkbox"]),
+#StudiesModal form select,
+#StudiesModal form textarea {
+    width: 80% !important;
+    height: 35px !important;
+    border: 1px solid var(--bs-black) !important;
+    padding: 0 10px !important;
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 16px !important;
+    box-sizing: border-box !important;
+}
+
+#StudiesModal form textarea {
+    height: 87px !important;
+    min-height: 87px !important;
+}
+
+#StudiesModal form label {
+    display: block !important;
+    width: 100% !important;
+    padding: 14px 0 !important;
+    color: #000 !important;
+    font-size: 16px !important;
+}
+
+#StudiesModal form input.wpcf7-submit {
+    max-width: 258px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    height: 49px !important;
+    background: var(--bs-lightblue) !important;
+    color: var(--bs-white) !important;
+    border: 0 !important;
+    text-transform: uppercase !important;
+    font-size: 25px !important;
+    font-weight: 400 !important;
+}
+
+#StudiesModal form input[type="checkbox"] {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+#StudiesModal form input[type="checkbox"] {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Clean StudiesModal CSS - matches German site exactly */
+
+@media only screen and (max-width:767px){
+img.w-100.signture{padding:0!important}
+section.about_inmode{padding:50px 0}
+.col-md-6.sign{height:440px}
+.desktop-hide{display:block}
+.mob-hide{display:none}
+.counter-box.colored,.counter-box.colored span{font-size:40px}
+.counter-box.colored p{font-size:17px;max-width:100px;color:var(--bs-black)}
+.mob-menu.desktop-hide{width:30%;text-align:right;padding-right:20px;padding-top:0;color:var(--bs-white);font-size:20px}
+.logo_wrap{width:70%;padding-left:20px}
+.banner{background-color:var(--bs-white)!important;background-repeat:no-repeat!important;padding-top:80px;margin-top:-62px;background-size:auto 520px!important;background-position:top left 26%!important}
+.about_inmode h1,section.about_inmode,section.clients.says h2,section.clinical_studies h2,section.our_workstation,section.our_workstation h2{font-size:19px!important;margin-bottom:15px!important}
+.about_inmode p{font-size:12px;line-height:24px}
+.banner_slider.multiple-banners.slick-initialized.slick-slider{margin-bottom:0!important}
+.our_workstation a.link_discover,.our_workstation p,.studies_description a.link_discover{font-size:14px!important;font-weight:500}
+.col-sm-6.sign{height:440px}
+section.clients.says,section.our_workstation{padding:40px 0}
+section.clinical_studies .container>h2{padding:25px 0}
+.testimonial_description h5,.testimonial_description p{font-size:18px;line-height:24px}
+section.clients.says .conatiner-fluid{padding-left:15px;padding-right:15px}
+.testimonial_description a{font-size:14px}
+section.techonology{background:url('/wp-content/uploads/2025/02/Pro-Capture-One-2061-1.png');background-repeat:no-repeat;background-size:50%;background-position:left -40% bottom;padding:0}
+section.techonology h2{font-size:24px!important}
+section.techonology a.btn.btn-primary.btn-contact{font-size:17px}
+.footer_top h3{font-size:35px}
+.footer_top h5{font-size:22px}
+.footer-address{font-size:10px}
+.row.footer_bottom nav #footer-menu{font-size:11px}
+.footer_top{padding-top:40px;padding-bottom:20px;border-bottom:2px solid var(--bs-lightblue)}
+section.techonology .row{padding-bottom:80px}
+h2.page-title{margin-bottom:0;font-size:19px}
+section.work_stations{padding:40px 15px;}
+.d-flex.flex-column.h-100.flex-height{min-height:320px}
+.row.workstation-bottom.my-3{max-width:100%;border-bottom:0}
+.workstation-link{text-align:center}
+.workstation-link a{font-size:12px;border:1px solid var(--bs-lightblue);max-width:110px;display:block;margin:0 auto;background:transparent;color:var(--bs-lightblue);padding:8px 15px;height:35px;line-height:19px;border-radius:4px}
+.workstation_desc p{margin-bottom:15px;font-size:12px}
+.workstation-bottom .workstation_desc,.workstation-bottom .workstation_desc h3{font-size:12px}
+.workstation-bottom .workstation_desc ul li{font-size:12px}
+/* Mobile-only workstation styles */
+@media only screen and (max-width: 767px) {
+    /* Reset the layout to stack vertically */
+    .row.workstation-bottom.my-3{
+        min-height: 500px;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    
+    .workstation_img, .workstation-content{
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+    }
+    
+    .workstation-content{
+        display: block !important;
+        height: auto;
+    }
+    
+    /* Override the flex classes on mobile */
+    .workstation-content .d-flex,
+    .workstation-content .flex-column,
+    .workstation-content .h-100,
+    .workstation-content .flex-height{
+        display: block !important;
+        height: auto !important;
+        min-height: auto !important;
+    }
+    
+    /* 1. Logo at top */
+    .workstation-bottom img.wrokstation_logo{
+        max-width: 100px;
+        max-height: 50px;
+        margin: 0 auto 15px;
+        display: block;
+    }
+    
+    /* 2. Machine image */
+    .workstation_img{
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 15px 0;
+        order: -1; /* Put machine before content */
+    }
+    .workstation_img img{
+        height: 180px;
+        width: auto;
+        object-fit: contain;
+    }
+    
+    /* 3. Text content */
+    .workstation_desc{
+        margin-bottom: 10px;
+    }
+    
+    /* Limit description text to 3 lines */
+    .workstation_desc p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.4;
+        max-height: calc(1.4em * 3);
+        margin-bottom: 8px;
+    }
+    
+    /* Limit treatment list to 3 lines */
+    .workstation_desc ul{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3;
+        max-height: calc(1.3em * 3);
+        margin-bottom: 5px;
+        padding-left: 15px;
+    }
+    
+    /* Reduce space on content section */
+    .workstation_desc{
+        margin-bottom: 5px;
+    }
+    
+    /* 4. Discover more with reduced space */
+    .workstation-link{
+        margin-top: 0px;
+        padding-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .workstation-link a{
+        border: none !important;
+        background: transparent !important;
+        padding: 0 !important;
+        height: auto !important;
+        line-height: normal !important;
+        border-radius: 0 !important;
+        max-width: none !important;
+        font-size: 12px;
+        color: var(--bs-lightblue);
+        text-decoration: none;
+        white-space: nowrap;
+        margin: 0;
+    }
+}
+.post_header h3{font-size:15px;letter-spacing:2px;margin:30px 10px;line-height:22px; font-weight:500;}
+.p2i button.navbar-toggler{font-size:15px}
+.p2i .navbar-toggler:focus{box-shadow:none!important}
+.p2i_list li a{padding:5px 30px 5px;font-size:13px;display:block}
+section.main_part .post_desc{font-size:12px;line-height:15px}
+section.main_part .row.content_work h2{font-size:16px;line-height:20px;padding:10px 0}
+.row.content_work{padding-top:40px}
+div#work_banifit ul{font-size:12px;line-height:24px}
+div#work_banifit>ul>li{padding:5px 0}
+/* HIDE REQUEST INFORMATION BUTTON COMPLETELY */
+div#work_banifit a.request-list, 
+a.request-list, 
+.request-list, 
+a.color2.request-list, 
+.color2.request-list,
+#work_banifit a.color2.request-list,
+div#work_banifit a.color2.request-list,
+section div#work_banifit a.color2.request-list {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+}
+.row.content_work hr.border-single-work{display:none!important}
+section.main_part{padding-bottom:40px}
+section#work_tech h2.inner_heading{font-size:16px;line-height:20px}
+section#work_tech p{font-size:12px!important;line-height:15px;padding:10px 0}
+section#work_tech .after-before.mt-auto span{font-size:10px}
+section#work_event h2,section#work_news h2{font-size:18px;line-height:24px;padding:20px 0}
+.tech_list a.link-btn{margin-bottom:0}
+section#work_studies h2{padding:40px 0}
+p.study_date,p.study_publication,section.clinical_studies a.btn.btn-primary.btn-studies{font-size:12px}
+hr.border-single-work{margin:40px auto}
+section#work_news{padding-bottom:0}
+.team-list.col-md-4 .treament-thumb{margin:20px auto;margin-right:auto}
+h2.page_title{font-size:20px}
+h3.treatment_heading{font-size:14px}
+.result_list1 a.link.color2{font-size:12px}
+.single.single-treatments h2.color2.heading_post{font-size:19px;line-height:35px}
+.single.single-treatments h3{font-size:16px;line-height:34px;letter-spacing:0}
+.single.single-treatments .single-post_desc p{font-size:12px;line-height:15px}
+.single.single-treatments .single-post_desc h3{font-size:16px}
+.after-before-content p{font-size:12px;line-height:18px}
+.result-slide1.row.p-5{padding-top:1rem !important padding-bottom:1rem}
+.page-template-clinical-studies h2.page_title{font-size:19px}
+.page-template-clinical-studies p{font-size:15px;line-height:20px;}
+.page-template-clinical-studies .main_part p{font-size:15px;line-height:20px !important;}
+.page-template-clinical-studies h3.clinical-Studies_heading{font-size:15px;line-height:18px;font-weight:400}
+.page-template-clinical-studies .studies-meta p{font-size:12px;line-height:15px}
+.page-template-clinical-studies a.color2.link-btn{font-size:15px;margin:9px auto!important;}
+.page-desc p{font-size:14px;line-height:20px}
+.bg-white {
+    background-repeat: no-repeat;
+    background-position: bottom left, center center;
+    background-size: 340px, cover;
+}
+.menu-item-has-children > .sub-menu >li> a {font-size: 13px !important; padding: 10px 10px !important;}
+img.w-100.signture { padding: 0px !important;}
+.col-md-6.sign {height: 440px;}
+.row.footer_bottom nav #footer-menu { justify-content: space-evenly;  padding: 0 15px; flex-wrap:wrap;}
+.row.footer_bottom nav #footer-menu li { padding: 10px;}
+.col-md-6.text-right.footer-address { text-align: center !important; padding: 0 10px;justify-content: center;}
+section.clinical_studies .row{padding-bottom:0px !important;}
+.menu-item-has-children > a:after {content: "\f107"; }
+a.custom-logo-link img{max-width:195px; margin-top:0!important; height:auto!important;}
+nav button.navbar-toggler{border:0 !important; margin-top: 6px;}
+nav button.navbar-toggler[aria-expanded="false"] i.fa-times {display: none !important;}
+nav button.navbar-toggler[aria-expanded="true"] i.fa-times {display: block !important;}
+nav button.navbar-toggler[aria-expanded="true"] i.fa-bars { display: none !important;}
+.counter-row { background: #fff;}	
+section.techonology { background-color: #fff; background-size: 78%;background-position: left -160% bottom;}
+section.clients.says { padding-bottom: 3px;}
+footer#colophon {padding-bottom: 20px;}	
+section.clients.says.slick-dots{display:none !important;}
+.tab-container form label{font-size:13px !important;}  
+section.work_stations h2.page-title {font-size:19px;}
+.page-template-about-page-template h2.page_title , section.body_content_about h2 { font-size: 19px;}
+section.body_content_about .page-desc p {font-size: 12px; line-height: 20px;}
+section.body_content_about hr.single_border{display:none;}
+.col-md-4.col-12.modal_video { text-align: center;  margin: 20px auto;}
+.fundamentals ul li, .vision_mission  { font-size: 12px;line-height: 20px;}
+.vision_mission { margin-bottom: 20px;}
+section.body_content_about h3.heading_sub_inner, h3.color2.heading_inner {font-size: 16px; line-height:28px;font-weight: 400;}
+.fixed_width.team_group { padding-top: 30px;}
+.team_description h4{font-size:17px !important; font-weight:600; line-height:20px;}
+.team_description p{margin-bottom:20px;}
+.team-list.row p {  font-size: 15px;line-height: 23px;  text-align: left;}
+p#modalContent {font-size: 13px;line-height: 16px;}
+.team_pop_content h5 {font-size: 17px;line-height: 21px;}
+.team_pop_content h5.modal-desig {font-size: 21px; line-height: 24px; font-weight:400;}
+.treatment_list img {width: 280px  !important;  max-width: 100%;}
+body.treatments-template-default .post_header h3 {
+    margin: 10px;
+    font-size: 15px;
+    line-height: 18px;
+}
+.after-before-content p { margin: 10px 0;}
+a.btn.btn-treatment_back.color2 { font-size: 16px;  padding: 0px 0 20px;}
+#before img, #after img{max-height:270px;}
+  
+   
+   
+   .form-filters.active {
+       display: block;
+       z-index: 999;
+   }
+.form-filters {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+}
+.filter_list {
+    gap: 0px;
+    flex-direction: column;
+}
+.form-filters button#all-button{display:none;}
+
+.form-filters button.btn.btn_border_white.dropdown-toggle, .form-filters button.btn_border_white {
+    border: 0;
+    color: #000;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    text-transform:uppercase; margin-top:10px;
+    width:100% !important;
+}
+.form-filters .dropdown-toggle::after {
+    float: right;
+}
+.form-filters ul.dropdown-menu li {
+    width: 49%;
+    float: left;
+}
+.form-filters ul.dropdown-menu.show {
+    position: relative !important;
+    transition: none !important;
+    inset: unset !important;
+    display: block !important;
+}
+.form-filters ul.dropdown-menu.show li label {color: #000000 !important;  font-size: 16px !important;}
+.form-filters .dropdown {  border-bottom: 1px solid var(--bs-lightblue);}
+
+.form-filters ul.dropdown-menu {position: relative; display: block; width: 100%;background: transparent;border: 0px;font-size: 14px;}
+h4.filter_title { font-size: 14px;font-weight: 400; margin-bottom: 0; text-trnasform:uppercase;}
+a#reset-button {
+    color: var(--bs-lightblue);
+    font-size: 13px;
+    float: right;
+    padding: 0;
+    float:right;}
+
+.row.d-md-none.align-items-center.mx-3 {
+    border-bottom: 1px solid var(--bs-lightblue);
+}
+.form-filters{display:none;}
+.page-template-news_template h2.page_title, .page-template-blog-template h2{font-size:19px;}
+.team-list a.color2.link-btn {  margin: 0 auto 15px;font-size: 15px;}
+.news-desc h4{font-size:10px;}
+.news-desc h2 {font-size: 12px; line-height: 14px; min-height: unset;}
+.blog-list .news-desc h4, .news-desc p.date { font-size: 12px;}
+.blog-list .news-desc h3 { font-size: 19px;font-weight: 700;}
+h2.text-center.color2.single_post_title { font-size: 19px; margin-bottom: 30px;}
+.mob_show { display:block !important;}
+.single.single-post h2.color2.heading_post.mb-2 { font-size: 20px;}
+.single.single-post p.date {font-size: 12px;font-weight: 700;}
+.post_header p {font-size: 12px;line-height: 15px;}
+.single.single-post section.main_part .container {max-width: 100%; padding:0 15px; }
+h2.page_title.text-center.after_before_gallery{ font-size: 19px;font-weight: 700; padding:10px !important;}
+.page-template-after-before-template .page-desc p{font-size:15px;line-height:20px}
+.result_list1 a.color2.link-btn.d-block { font-size: 15px; font-weight: 700;}
+.tech_logo{min-height:unset !important}
+.page-template-after-before-template #before img, .page-template-after-before-template #after img { max-height: 270px;}
+
+/* Desktop before/after slider fix for after-before template page - FIXED HEIGHT */
+@media (min-width: 768px) {
+    .page-template-after-before-template .ba-Slider {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 270px !important;
+        max-height: 270px !important;
+        min-height: 270px !important;
+        overflow: hidden !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    
+    .page-template-after-before-template .ba-Slider #before, 
+    .page-template-after-before-template .ba-Slider #after {
+        position: absolute !important;
+        top: 0 !important;
+        height: 270px !important;
+        max-height: 270px !important;
+        min-height: 270px !important;
+        overflow: hidden !important;
+    }
+    
+    .page-template-after-before-template .ba-Slider #after {
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 1 !important;
+    }
+    
+    .page-template-after-before-template .ba-Slider #before {
+        left: 0 !important;
+        width: 50% !important;
+        z-index: 2 !important;
+    }
+    
+    .page-template-after-before-template .ba-Slider #before img,
+    .page-template-after-before-template .ba-Slider #after img {
+        width: 100% !important;
+        height: 270px !important;
+        max-height: 270px !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+    
+    .page-template-after-before-template .ba-Slider .slider2 {
+        position: absolute !important;
+        top: 0 !important;
+        left: 50% !important;
+        width: 3px !important;
+        height: 270px !important;
+        max-height: 270px !important;
+        background: #00BCD4 !important;
+        z-index: 3 !important;
+        cursor: ew-resize !important;
+        transform: translateX(-50%) !important;
+        box-shadow: 0 0 4px rgba(0, 188, 212, 0.5) !important;
+        background-image: none !important;
+        background-size: auto !important;
+    }
+    
+    .page-template-after-before-template .ba-Slider .slider2::after {
+        content: '' !important;
+        display: block !important;
+        width: 28px !important;
+        height: 28px !important;
+        background: #00BCD4 !important;
+        border-radius: 50% !important;
+        border: 3px solid #fff !important;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+}
+section.events.upcoming-events h2.page-title{font-size:19px;}
+section.events.upcoming-events p { font-size: 15px; line-height: 20px;}
+.event-top-part p, .event-top-part span{font-size:12px !important;}
+.event-top-part h4 a{font-size:19px;padding-top: 10px; min-height:unset;}
+
+.location span {font-size: 15px !important; font-weight:400; }
+a.btn.btn-event{width:125px; font-size:13px;}
+.event-thumb:hover .overlay-thumb .text {  display: flex;}
+p.tream, h6#eventDate{font-size:12px !important;}
+h5#eventTitle{font-size:19px;}
+p.eventDescription {font-size: 13px !important;line-height: 16px;}
+p.locate {font-size: 15px; line-height: 20px;}
+div#eventModal a.btn.btn-link.register {width: 115px;  font-size: 13px; font-weight: 700;}
+a.text-center.color2.pre_event_link{font-size:15px;}
+.event-thumb iframe {
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+    WIDTH: 100%;
+}
+
+/* StudiesModal CSS Reset and Form Fixes */
+/* StudiesModal CSS - Clean version matching German site exactly */
+
+/* Custom CSS moved from Theme Customizer - SAFE RULES ONLY */
+/* Removed conflicting form-related CSS that was breaking StudiesModal */
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* TEMPORARY FIX: Hide download buttons until form styling is fixed */
+/* TO RESTORE BUTTONS: Simply delete the CSS rules below */
+.clinical_studies .open_download,
+a.color2.link-btn.open_download,
+.studies_list .open_download,
+.link_discover.studies_loop.open_download {
+    display: none !important;
+}
+/* END TEMPORARY FIX */
+
+@media (max-width: 767px) {
+    #before img, #after img {
+        height: 270px;
+        max-height: 270px;
+        object-fit: cover;
+    }
+}
