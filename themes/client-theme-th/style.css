@@ -1,0 +1,13 @@
+/*
+Theme Name: Inmode TH Child
+Theme URI: https://inmode.com
+Description: Child theme for Thailand based on Inmode Base Theme.
+Author: InMode
+Template: client-theme
+Text Domain: client-theme-th
+Version: 0.1.0
+*/
+
+/* Thailand-specific overrides below. Parent styles are enqueued via functions.php */
+
+
